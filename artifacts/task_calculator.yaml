@@ -1,0 +1,9 @@
+# Final version of task_calculator.yaml
+
+name: "Calculator"
+description: "A command-line calculator that supports basic arithmetic operations."
+requirements:
+  - "Support addition, subtraction, multiplication, and division"
+  - "Handle both integers and floating-point numbers"
+  - "Gracefully handle division by zero"
+output_format: "Python script (calculator.py) that takes two numbers and an operator as input"
