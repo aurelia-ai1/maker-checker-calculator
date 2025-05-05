@@ -20,8 +20,8 @@ def commit_to_repo():
         subprocess.run(["git", "remote", "add", "origin", authed_repo], check=True)
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", "Add validated calculator app via Maker-Checker POC"], check=True)
-        subprocess.run(["git", "branch", "-M", "main"], check=True)
-        subprocess.run(["git", "push", "-u", "origin", "main"], check=True)
+        subprocess.run(["git", "checkout", "-b", "feature/calculator-poc"], check=True)
+        subprocess.run(["git", "push", "-u", "origin", "feature/calculator-poc"], check=True)
         print("✅ Code pushed to GitHub.")
     except subprocess.CalledProcessError as e:
         print("❌ Git push failed:", e)
